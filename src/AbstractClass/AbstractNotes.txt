@@ -1,0 +1,25 @@
+An abstract class in Java is a class that cannot be instantiated 
+(you cannot create an object of it directly). It is used as a blueprint for other classes.
+
+Subclass must implement all abstract methods
+
+
+-> Class is declared abstracted through keyword "abstract"
+->It can have both abstract(method without body) and non abstract method
+->We parent has some features which all child classes have in common then this can be used
+->Constructors can be created inside them and with super keyword from child classes we can access hem.
+
+
+When to use an abstract class
+
+Use an abstract class when:
+
+Multiple related classes share common fields and methods.
+You want to provide some default implementation while forcing subclasses to implement certain methods.
+When to use an interface
+
+Use an interface when:
+
+You want to define a capability or contract (e.g., Runnable, Comparable).
+Unrelated classes should share the same behavior.
+A class may need to inherit behavior from multiple sources.
