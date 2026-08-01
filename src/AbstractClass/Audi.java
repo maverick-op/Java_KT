@@ -20,4 +20,6 @@ public class Audi extends LuxuryCar {
     public void pressdualbreak(){
         //its implemetation
     }
+
+    //if new Audi() object is creted it reference will be stored in the parent class i.e Luxury Car
 }

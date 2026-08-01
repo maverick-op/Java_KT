@@ -1,0 +1,25 @@
+Nested Class
+
+Class Within another class is called Nested class
+
+When to use?
+If you know that a class(A) will be used by only one another class(B) then instead of creating
+a new file(a.java) for it we can create nested class inside B class itself
+and 
+also help us to group logically related class in one file
+
+
+Types of Nested Classes--------->
+There are 4 types:
+
+Static nested class
+Non-static inner class
+Local inner class
+Anonymous inner class
+
+
+What is the difference between an inner class and a static nested class?
+
+->A non-static inner class is associated with an instance of the outer class
+and requires an outer class object to be created. A static nested class belongs to the outer class itself and
+can be instantiated without creating an outer class object.

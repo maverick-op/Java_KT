@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Static",
+            "request": "launch",
+            "mainClass": "NestedClass.Static",
+            "projectName": "Java_33d398d1"
+        },
+        {
+            "type": "java",
+            "name": "NonStatic",
+            "request": "launch",
+            "mainClass": "NestedClass.NonStatic",
+            "projectName": "Java_33d398d1"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "App",

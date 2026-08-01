@@ -1,0 +1,18 @@
+Super and Sub class
+
+-> A class that is derived from another class is called a Subclass
+-> And from class through which subclass is derived is called Super class
+-> In java the absence of any other explicit superclass every class is implicitly a subclass of object class
+->Object is the topmost class in java
+It has some common methods like clone(), toString(), equals(), notify(), wait() etc
+
+
+
+              Object
+             /  |   \
+            /   |    \
+           /    |     \
+  ObjectTest  Person  Audi
+  Every class implicitly extends Object
+
+Even though you haven't written extends Object, Java treats your classes approximately like this:
