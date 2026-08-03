@@ -1,0 +1,26 @@
+A generic class in Java is a class that can work with different data types while providing compile-time type safety.
+
+The main idea is: instead of creating separate classes for Integer, String, etc., you create one reusable class using a type parameter.
+
+
+Main benefits
+Type safety
+No unnecessary casting
+Code reusability
+Errors detected at compile time
+
+
+Important: Generics Don't Work with Primitive Types
+Box<int> b; // ❌ 
+
+You need wrapper classes:
+Box<Integer> b; // ✅
+
+
+Common conventions:
+
+T → Type
+E → Element
+K → Key
+V → Value
+N → Number

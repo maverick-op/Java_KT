@@ -1,6 +1,7 @@
 package NestedClass;
 
 public class NonStatic { // outer class
+    
 
     int x = 10;
 

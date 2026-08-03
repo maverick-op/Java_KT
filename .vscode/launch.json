@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Box",
+            "request": "launch",
+            "mainClass": "GenericClass.Box",
+            "projectName": "Java_33d398d1"
+        },
+        {
+            "type": "java",
             "name": "Static",
             "request": "launch",
             "mainClass": "NestedClass.Static",
