@@ -1,0 +1,10 @@
+ENUM class
+
+->It has collection of constants(variables which values can not be changed)
+->Its constants are static and final implicity(We do not have to write it)
+->It can not extend any class, as it internally extends java.lang.Enum class
+->it can implement interfaces
+->it can have variables consructors methods
+->it can not be initiated(as consructors will be private only even you give deafult in bytecode it make it private)
+->No other class can extend Enum
+->It can have abstract methods and all the constant should implement that abstract methods

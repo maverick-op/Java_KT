@@ -1,0 +1,25 @@
+POJO Class
+
+->stands for Plain old java object
+->Contains variable and its getter and setter methods
+->class should be public
+->Public default constructor
+->No annotation should be used like @Table, @Entity, @Id etc.
+->It should not extend any class or implement any interface
+
+A POJO is not limited to just getters and setters.
+
+A POJO can extend another class if your design requires it. 
+What makes it a POJO is that it isn't forced to inherit from or implement framework-specific types.
+
+Is every Java class a POJO?
+
+No.
+
+For example:
+
+class MyThread extends Thread {
+}
+
+This is a regular Java class,
+but it's not typically considered a POJO because it extends a special framework/library class (Thread) to gain specific behavior rather than simply representing plain data.
