@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SingletonClass",
+            "request": "launch",
+            "mainClass": "SingletonClass.SingletonClass",
+            "projectName": "Java_33d398d1"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "EnumClass.Main",

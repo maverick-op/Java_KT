@@ -1,0 +1,43 @@
+A Singleton class is a class designed so that only one object of that class can exist in an application, 
+and that object is accessible globally through a controlled method.
+
+Main Characteristics of Singleton
+
+A Singleton class has these important features:
+
+1. Private constructor
+private Singleton() {
+}
+
+This prevents other classes from doing:
+
+Singleton obj = new Singleton(); // ❌ Not allowed
+
+2. Static variable
+
+The class itself stores its single object.
+
+private static Singleton instance;
+
+Why static?
+
+Because static belongs to the class, not an object.
+
+But we cannot create an object directly because the constructor is private. Therefore, the class manages its own single object.
+
+3. Public static method
+
+We need a way to access the object:
+
+public static Singleton getInstance()
+
+Since this method is static, we can call it without an object:
+
+Singleton obj = Singleton.getInstance();
+
+"Why do we use volatile in Double-Checked Locking Singleton?"
+
+You can answer:
+
+We use volatile to ensure visibility of the Singleton instance across threads and to prevent instruction reordering problems during object creation. 
+Without volatile, another thread may see a non-null reference before the object's initialization is safely visible, potentially accessing a partially constructed object.
