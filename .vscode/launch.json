@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "ImmutableClass.Main",
+            "projectName": "Java_33d398d1"
+        },
+        {
+            "type": "java",
             "name": "SingletonClass",
             "request": "launch",
             "mainClass": "SingletonClass.SingletonClass",

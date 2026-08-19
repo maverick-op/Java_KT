@@ -1,6 +1,11 @@
 A Singleton class is a class designed so that only one object of that class can exist in an application, 
 and that object is accessible globally through a controlled method.
 
+Why do we use Singleton class?
+
+We use the Singleton pattern when an application should have only one instance of a class and that instance needs to be shared across different parts of the application. 
+Common examples include configuration managers, loggers, cache managers, and other centralized services.
+
 Main Characteristics of Singleton
 
 A Singleton class has these important features:

@@ -1,0 +1,43 @@
+An immutable class is a class whose object's state cannot be changed after the object is created.
+
+-> We cannot change the value of an object once it is created
+-> Declare class as final so that it can not be extended
+-> All class memeber should be private so that direct access can be avoided
+-> And class memebers are initialized only once using constrcuctor
+-> There should not be any setter methods which is generally use to change the value
+-> Just getter methods and return copy of the number variable
+-> Example String wrapper classes
+
+
+Why Do We Need Immutable Classes?
+1. Thread Safety
+
+Immutable objects are naturally safer to share between threads because their state cannot change after construction.
+
+Thread 1 ──┐
+Thread 2 ──┼──→ Same Immutable Object
+Thread 3 ──┘
+
+
+Nobody changes its state
+
+So we often don't need synchronization to protect the object's state.
+
+2. Security
+
+Sensitive data cannot be accidentally modified after object creation.
+
+3. Easier to Understand
+
+The object always stays in the same state.
+
+Object created
+      ↓
+State never changes
+      ↓
+Predictable behavior
+4. Useful in Collections
+
+Immutable objects make safer keys for structures like HashMap, because their state does not change after insertion.
+
+For example, if an object's hashCode() depends on mutable fields and those fields change after insertion, it can become difficult to find the key correctly.
