@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Feature",
+            "request": "launch",
+            "mainClass": "Interface.Feature",
+            "projectName": "Java_33d398d1"
+        },
+        {
+            "type": "java",
+            "name": "MultipleInheritance",
+            "request": "launch",
+            "mainClass": "Interface.MultipleInheritance",
+            "projectName": "Java_33d398d1"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Interface.Main",
+            "projectName": "Java_33d398d1"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "ImmutableClass.Main",

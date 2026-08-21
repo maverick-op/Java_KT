@@ -1,0 +1,45 @@
+Interface is something which helps 2 system to interact with each other 
+without one system has to know the details of oher
+
+An interface in Java is a blueprint that defines a contract. 
+It tells a class what it must do, without necessarily specifying how it does it.
+
+Interface declaration consists of 
+-Modifiers
+-interface keyword
+-interface name
+
+only public and default modifiers are allowed(Protected and private are not allowed)
+
+
+-> we can not create the object of an interface but it can hold the ref of all the class
+which implements it and at runtime i decide which methods need to be invoked
+
+In java multiple inheritance is possible only through interface only
+
+--Method in interface
+-All methods are implicit public only
+-Method can not be declared as final
+
+Java Interface Features:
+
+1. Abstract Method
+   → No body
+   → Must be implemented
+
+2. Default Method (Java 8)
+   → Has body
+   → Optional to override
+   → Helps backward compatibility
+
+3. Static Method (Java 8)
+   → Has body
+   → Belongs to interface
+   → Call using InterfaceName.method()
+
+4. Multiple Interfaces
+   → class A implements X, Y, Z
+
+5. Polymorphism
+   → Interface reference can hold implementing objects
+   → Animal a = new Dog();
