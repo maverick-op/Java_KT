@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Interface.FunctionalInterface.Main",
+            "projectName": "Java_33d398d1"
+        },
+        {
+            "type": "java",
             "name": "Feature",
             "request": "launch",
             "mainClass": "Interface.Feature",

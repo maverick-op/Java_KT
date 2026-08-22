@@ -1,0 +1,19 @@
+Functional Interface
+- If an interface contains only 1 abstract method that is known as Functional interface
+- Also known as SAM interface ( Single abstract method)
+- @FunctionalInterface keyword can be used at top of the interface(But its optional)
+
+
+Lambda Expression
+- Its a way to implement the functional interface
+
+
+Use Case: Sorting Employees with Different Rules
+
+Suppose you have a list of employees, and sometimes you want to:
+
+Sort by salary
+Sort by age
+Sort by name
+
+Instead of creating a separate class for every sorting rule, we can use a functional interface + lambda expression.
