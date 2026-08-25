@@ -1,0 +1,52 @@
+What is Exception?
+- Its an event that occur during the execution of the program
+- It will disrupt your program normal flow.
+- It creates the exception object which contain information about the erroe like
+  -> Its type of exception
+  ->stack trace etc 
+- Runtime system use this exception object and find the class which can handle it
+
+
+-> Errors generally represent serious JVM/system-level problems that applications are not expected to recover from, 
+while exceptions represent conditions that applications can often handle.
+
+
+                  Exception Hierarchy
+
+                         Object
+                            │
+                            ▼
+                       Throwable
+                       /       \
+                      /         \
+                     ▼           ▼
+                  Error       Exception
+                    │             │
+                    │             ├───────────────────────┐
+                    │             │                       │
+                    │             ▼                       ▼
+                    │      RuntimeException          Other Exceptions
+                    │             │                   (Checked)
+                    │             │
+                    │             ├── NullPointerException
+                    │             ├── ArithmeticException
+                    │             ├── ArrayIndexOutOfBoundsException
+                    │             ├── StringIndexOutOfBoundsException
+                    │             ├── NumberFormatException
+                    │             ├── IllegalArgumentException
+                    │             ├── IllegalStateException
+                    │             └── ClassCastException
+                    │
+                    ├── OutOfMemoryError
+                    ├── StackOverflowError
+                    ├── NoClassDefFoundError
+                    ├── ExceptionInInitializerError
+                    └── ...
+
+
+Why is Throwable the parent of both Error and Exception?
+
+Because Java has two categories of abnormal conditions:
+
+Exception → conditions an application may reasonably handle.
+Error → serious problems generally outside application control.

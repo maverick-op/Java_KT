@@ -1,0 +1,17 @@
+Checked exceptions are checked by the compiler, so you must either handle them using try-catch or declare them using throws.
+
+
+Common Checked Exceptions
+
+The important ones for interviews are:
+
+Exception
+│
+├── IOException
+│   ├── FileNotFoundException
+│   └── EOFException
+│
+├── SQLException
+├── ClassNotFoundException
+├── InterruptedException
+└── ParseException

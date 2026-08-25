@@ -1,0 +1,13 @@
+Unchecked exceptions are subclasses of:
+RuntimeException
+
+Examples:
+
+NullPointerException
+ArithmeticException
+ArrayIndexOutOfBoundsException
+NumberFormatException
+IllegalArgumentException
+
+Unchecked exceptions are exceptions that extend RuntimeException; 
+the compiler does not force us to catch or declare them.
