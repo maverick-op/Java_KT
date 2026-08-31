@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "ExceptionHandling.Main",
+            "projectName": "Java_33d398d1"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "ExceptionHandling.UncheckedException.Main",
             "projectName": "Java_33d398d1"
         },

@@ -50,3 +50,26 @@ Because Java has two categories of abnormal conditions:
 
 Exception → conditions an application may reasonably handle.
 Error → serious problems generally outside application control.
+
+
+-->throws does not actually throw the exception.
+
+It says:
+
+"This method may throw this exception. Whoever calls me needs to deal with it."
+
+So:
+
+throws
+   ↓
+Declaration / warning to caller
+
+Whereas:
+
+throw
+   ↓
+Actually creates/throws exception
+
+
+-->finally normally executes regardless of whether an exception occurs or whether the exception is caught, 
+but it may not execute if the JVM terminates abruptly, such as through System.exit() or a JVM crash.

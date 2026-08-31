@@ -1,0 +1,61 @@
+Comparable = class defines its own natural/default sorting.
+Comparator = you define sorting externally/custom sorting.
+
+******************************************************************
+Comparable is an interface in java
+
+If your class implements Comparable you are saying
+"Objects of this class have a default/natural ordering"
+
+********************************************************************
+
+Comparator is an interface used when you want to define custom/external sorting logic
+
+
+**********************************************************************
+
+7. Why Integer.compare() is Better Than Subtraction
+-->You will often see:
+return e1.salary - e2.salary;
+But prefer:
+return Integer.compare(e1.salary, e2.salary);
+Q-> Why?
+--> Because subtraction can cause integer overflow.
+
+
+*******************************************************************
+
+Case 1: Custom class + no Comparable + no Comparator ❌
+class Employee {
+    String name;
+    int salary;
+
+    Employee(String name, int salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+}
+
+Now:
+
+List<Employee> employees = new ArrayList<>();
+
+employees.add(new Employee("Pratyush", 50000));
+employees.add(new Employee("Rahul", 30000));
+employees.add(new Employee("Sahil", 70000));
+
+Collections.sort(employees);  // ❌
+
+Why?
+
+Java doesn't know:
+
+Employee 1 vs Employee 2
+        ↓
+Compare based on what?
+        ↓
+salary?
+age?
+name?
+
+Collections.sort(list) expects the elements to have a natural ordering, which custom Employee doesn't have unless it implements Comparable.

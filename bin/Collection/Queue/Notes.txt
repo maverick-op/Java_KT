@@ -1,0 +1,41 @@
+A Queue is a data structure used to store elements where elements are generally processed in a particular order.
+
+The most common queue behavior is:
+FIFO — First In, First Out
+
+Queue is an interface that extends Collection
+
+***************************************************************************************
+
+-->PriorityQueue is a class that implements the Queue interface.
+
+Unlike a normal FIFO queue, it removes elements according to priority.
+
+By default, Java uses natural ordering, so for integers:
+
+Smallest element has the highest priority.
+
+
+**************************************************************************************
+
+Deque means: Double Ended Queue
+
+It allows you to insert and remove from both ends.
+
+You can work with:
+Front → First
+Back → Last
+
+
+************************************************************************************
+
+        Collection
+                        |
+                      Queue
+                    /       \
+                   /         \
+          PriorityQueue      Deque
+                              |
+                     ┌────────┴────────┐
+                     ↓                 ↓
+                 ArrayDeque        LinkedList
