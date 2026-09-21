@@ -8,6 +8,20 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "Stream.Main",
+            "projectName": "Java_33d398d1"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Collection.Comparator.Main",
+            "projectName": "Java_33d398d1"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "ExceptionHandling.Main",
             "projectName": "Java_33d398d1"
         },

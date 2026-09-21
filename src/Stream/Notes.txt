@@ -1,0 +1,48 @@
+A Stream in Java is a sequence of elements that allows us to process data
+in a functional and declarative way.
+
+we can consider Stream as a pipeline through which our collection element passes
+through
+while element passes through pipeline it performs various operation like sorting filtering
+
+*********************************************************************************
+
+A Stream generally has three parts:
+
+Source
+   ↓
+Intermediate Operations
+   ↓
+Terminal Operation
+
+Q What is lazy evaluation?
+
+-> Intermediate operations are not executed until a terminal operation triggers the Stream pipeline.
+
+
+Intermediate Operations: Intermediate operations return another Stream.
+
+Examples:
+
+filter()
+map()
+sorted()
+distinct()
+limit()
+skip()
+
+Terminal Operations: Terminal operations produce the final result or side effect.
+
+Examples:
+
+forEach()
+collect()
+reduce()
+count()
+min()
+max()
+findFirst()
+findAny()
+anyMatch()
+allMatch()
+noneMatch()
